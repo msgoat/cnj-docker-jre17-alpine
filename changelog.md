@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.2.0] - 2024-02-22
 ### Changed
 - regular upgrade of upstream image
+- upgraded docker-maven-plugin to version 0.44.0
+### Fixed
+- fixed docker platforms using linux/arm64 instead of linux/arm64/v8 (which does not exist)
 
 ## [1.1.0] - 2023-11-30
 ### Added
