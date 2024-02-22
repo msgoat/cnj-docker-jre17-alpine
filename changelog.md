@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 ### Fixed
 
+## [1.2.0] - 2024-02-22
+### Changed
+- regular upgrade of upstream image
+
 ## [1.1.0] - 2023-11-30
 ### Added
 - produces images for linux/amd64 and linux/arm64/v8 platforms now
