@@ -37,7 +37,7 @@ phases:
     on-failure: ABORT
     commands:
       - echo "Running phase build"
-      - export GIT_BRANCH=${CODEBUILD_WEBHOOK_HEAD_REF:11}
+      - export GIT_BRANCH=main
       - export VERSION_REVISION=$(grep -m 1 '<revision>' pom.xml | cut -d '<' -f2  | cut -d '>' -f2)
       - export VERSION_CHANGELIST=${GIT_BRANCH:-main}
       - export VERSION_SHA1=${CODEBUILD_RESOLVED_SOURCE_VERSION:0:8}
