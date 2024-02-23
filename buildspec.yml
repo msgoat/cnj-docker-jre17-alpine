@@ -36,7 +36,7 @@ phases:
   build:
     on-failure: ABORT
     commands:
-      - echo "Running phase build"
+      - echo "Running phase build with CODEBUILD_RESOLVED_SOURCE_VERSION=[$CODEBUILD_RESOLVED_SOURCE_VERSION]"
       - export GIT_BRANCH=main
       - export VERSION_REVISION=$(grep -m 1 '<revision>' pom.xml | cut -d '<' -f2  | cut -d '>' -f2)
       - export VERSION_CHANGELIST=${GIT_BRANCH:-main}
